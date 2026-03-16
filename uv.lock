@@ -1,0 +1,20 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[[package]]
+name = "pycraft"
+version = "1503040"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/70/7d/ebad9f0ed61b2120edbcbbb7baa48b5399cb306ded7e82ab77e5280d8c05/PyCraft-1503040.tar.bz2", hash = "sha256:4a5e210aff02931c38c39c3ff414bc8ff9a3d4a3445286dbb295dcd27657bd5e", size = 24516, upload-time = "2015-03-04T21:06:49.301Z" }
+
+[[package]]
+name = "repl-nix-workspace"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "pycraft" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pycraft", specifier = ">=1503040" }]
